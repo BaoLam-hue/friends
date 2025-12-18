@@ -20,7 +20,7 @@ jobs:
           cache: yarn
 
       - name: Enable Yarn
-        run: corepack enable
+        run: yarn install --frozen-lockfile
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -47,7 +47,7 @@ jobs:
           cache: yarn
 
       - name: Enable Yarn
-        run: corepack enable
+        run: yarn install --frozen-lockfile
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -72,7 +72,7 @@ jobs:
           cache: yarn
 
       - name: Enable Yarn
-        run: corepack enable
+        run: yarn install --frozen-lockfile
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -112,7 +112,7 @@ jobs:
           cache: yarn
 
       - name: Install Yarn dependencies
-        run: corepack enable
+        run: yarn install --frozen-lockfile
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
