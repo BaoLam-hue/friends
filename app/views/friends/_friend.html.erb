@@ -1,0 +1,31 @@
+<div id="<%= dom_id friend %>">
+
+  <td>
+    <%= friend.first_name %>
+  </td>
+
+  <td>
+    <%= friend.last_name %>
+  </td>
+
+  <td>
+    <%= friend.email %>
+  </td>
+
+  <td>
+    <%= friend.phone %>
+  </td>
+
+  <td>
+    <%= friend.twitter %>
+  </td>
+  <th class="text-center">
+    <%= button_to "Show", friend, method: :get, class: "btn btn-primary"%>
+  </th>
+  <th class="text-center">
+    <%= button_to "Edit", edit_friend_path(friend), method: :get, class: "btn btn-secondary"%>
+  </th>
+  <th class="text-center">
+    <%= button_to "Delete", friend, method: :delete, class: "btn btn-danger"%>
+  </th>
+</div>
