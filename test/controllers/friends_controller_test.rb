@@ -2,6 +2,8 @@ require "test_helper"
 
 class FriendsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    @user = users(:one)
+    sign_in @user
     @friend = friends(:one)
   end
 
