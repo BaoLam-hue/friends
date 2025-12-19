@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Friends">
     <meta name="mobile-web-app-capable" content="yes">
-    <%= favicon_link_tag '//favicon.ico'%>
+    <%= favicon_link_tag "//favicon.ico"%>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -20,10 +20,10 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-    <%= render 'home/header' %>
+    <%= render "home/header" %>
     <br/>
     <div class="container">
-      <%= render 'layouts/alerts' %>
+      <%= render "layouts/alerts" %>
       <%= yield %>
     </div>
   </body>
