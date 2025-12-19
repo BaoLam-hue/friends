@@ -13,6 +13,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.12.0
+          cache: yarn
+
+      - name: Enable Yarn
+        run: yarn install --frozen-lockfile
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -31,6 +40,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.12.0
+          cache: yarn
+
+      - name: Enable Yarn
+        run: yarn install --frozen-lockfile
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -46,6 +64,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.12.0
+          cache: yarn
+
+      - name: Enable Yarn
+        run: yarn install --frozen-lockfile
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -78,10 +105,24 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.12.0
+          cache: yarn
+
+      - name: Install Yarn dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+
+      - name: Migrate database
+        env:
+          RAILS_ENV: test
+        run: bin/rails db:migrate
 
       - name: Run tests
         env:
@@ -108,6 +149,11 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Migrate database
+        env:
+          RAILS_ENV: test
+        run: bin/rails db:migrate
+
       - name: Run System Tests
         env:
           RAILS_ENV: test
@@ -116,7 +162,7 @@ jobs:
         run: bin/rails db:test:prepare test:system
 
       - name: Keep screenshots from failed system tests
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         if: failure()
         with:
           name: screenshots
