@@ -1,24 +1,41 @@
 # README
+Hello, I'm Bao Lam.\
+This is my little friends list website that was made by me using ruby on rails.\
+It has authentication and association between users.\
+I haven't done much with it yet, so it's not very pretty.\
+I hope you enjoy looking through it nonetheless.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[//]: # ()
+[//]: # (This README would normally document whatever steps are necessary to get the)
 
-Things you may want to cover:
+[//]: # (application up and running.)
 
-* Ruby version
+[//]: # ()
+[//]: # (Things you may want to cover:)
 
-* System dependencies
+[//]: # ()
+[//]: # (* Ruby version)
 
-* Configuration
+[//]: # ()
+[//]: # (* System dependencies)
 
-* Database creation
+[//]: # ()
+[//]: # (* Configuration)
 
-* Database initialization
+[//]: # ()
+[//]: # (* Database creation)
 
-* How to run the test suite
+[//]: # ()
+[//]: # (* Database initialization)
 
-* Services (job queues, cache servers, search engines, etc.)
+[//]: # ()
+[//]: # (* How to run the test suite)
 
-* Deployment instructions
+[//]: # ()
+[//]: # (* Services &#40;job queues, cache servers, search engines, etc.&#41;)
 
-* ...
+[//]: # ()
+[//]: # (* Deployment instructions)
+
+[//]: # ()
+[//]: # (* ...)
