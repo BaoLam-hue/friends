@@ -1,6 +1,6 @@
 # README
 Hello, I'm Bao Lam.\
-This is my little friends list website that was made by me using ruby on rails.\
+This is my friends list website that was made by me using ruby on rails.\
 It has authentication and association between users.\
 I haven't done much with it yet, so it's not very pretty.\
 I hope you enjoy looking through it nonetheless.
