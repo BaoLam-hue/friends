@@ -68,4 +68,4 @@ group :test do
 end
 
 gem "cssbundling-rails", "~> 1.4"
-gem "solargraph", "~> 0.57.0"
+gem "solargraph", "~> 0.58.1"
